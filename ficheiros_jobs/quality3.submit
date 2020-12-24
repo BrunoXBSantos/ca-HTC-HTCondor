@@ -1,0 +1,12 @@
+Universe = vanilla
+executable = quality3.sh
+log = out/log/log-quality3-$(Process).log
+output = out/output/out-quality3-$(Process).txt
+error = out/error/erro-quality3-$(Process).txt
+request_cpus = 1
+request_memory = 1024
+
+should_transfer_files  = Yes
+when_to_transfer_output = ON_EXIT
+transfer_input_files  = 3.mp4
+queue

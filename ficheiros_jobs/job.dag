@@ -1,0 +1,12 @@
+JOB Divide1 divide1.submit
+JOB Divide2 divide2.submit
+JOB Divide3 divide3.submit
+JOB Quality1 quality1.submit
+JOB Quality2 quality2.submit
+JOB Quality3 quality3.submit
+JOB Join join.submit
+
+PARENT Divide1 CHILD Quality1
+PARENT Divide2 CHILD Quality2
+PARENT Divide3 CHILD Quality3
+PARENT Quality1 Quality2 Quality3  CHILD Join

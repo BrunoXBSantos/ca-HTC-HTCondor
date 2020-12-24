@@ -1,0 +1,12 @@
+Universe = vanilla
+executable = join.sh
+log = out/log/log-join-$(Process).log
+output = out/output/out-join-$(Process).txt
+error = out/error/erro-join-$(Process).txt
+request_cpus = 1
+request_memory = 1024
+
+should_transfer_files  = Yes
+when_to_transfer_output = ON_EXIT
+transfer_input_files  = list.txt, 1_720.mp4, 2_720.mp4, 3_720.mp4
+queue

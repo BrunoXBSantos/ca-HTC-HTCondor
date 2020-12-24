@@ -1,0 +1,12 @@
+Universe = vanilla
+executable = divide1.sh
+log = out/log/log-divide1-$(Process).log
+output = out/output/out-divide1-$(Process).txt
+error = out/error/erro-divide1-$(Process).txt
+request_cpus = 1
+request_memory = 1024
+
+should_transfer_files  = Yes
+when_to_transfer_output = ON_EXIT
+transfer_input_files  = videos/samsung.mp4
+queue

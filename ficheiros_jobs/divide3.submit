@@ -1,0 +1,12 @@
+Universe = vanilla
+executable = divide3.sh
+log = out/log/log-divide3-$(Process).log
+output = out/output/out-divide3-$(Process).txt
+error = out/error/erro-divide3-$(Process).txt
+request_cpus = 1
+request_memory = 1024
+
+should_transfer_files  = Yes
+when_to_transfer_output = ON_EXIT
+transfer_input_files  = videos/samsung.mp4
+queue
